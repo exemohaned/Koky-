@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>ملك ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #1b2735, #090a0f);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+button {
+    margin-top: 30px;
+    padding: 12px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: #ff4d6d;
+    color: white;
+    cursor: pointer;
+}
+
+.letter {
+    font-size: 60px;
+    opacity: 0;
+    animation: show 1s forwards;
+}
+
+@keyframes show {
+    to { opacity: 1; }
+}
+
+.heart {
+    font-size: 70px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+</style>
+</head>
+<body>
+
+<section>
+    <h1>في اسم واحد…</h1>
+    <p>غيّر كل حاجة</p>
+    <button onclick="scrollToSection(1)">كمّلي الرحلة</button>
+</section>
+
+<section>
+    <div class="letter" style="animation-delay:0s">م</div>
+    <div class="letter" style="animation-delay:1s">ل</div>
+    <div class="letter" style="animation-delay:2s">ك</div>
+    <p style="margin-top:30px">مش مجرد اسم…</p>
+    <button onclick="scrollToSection(2)">كمّلي</button>
+</section>
+
+<section>
+    <p>راحة</p>
+    <p>أمان</p>
+    <p>ضحكة</p>
+    <p>اهتمام</p>
+    <p>قلب ❤️</p>
+    <p style="margin-top:20px">كلهم لما فكرت فيهم… طلعوا إنتِ</p>
+    <button onclick="scrollToSection(3)">لسه في حاجة</button>
+</section>
+
+<section>
+    <p>
+        <strong>ملك</strong><br><br>
+        مش طالب منك حاجة<br>
+        غير إنك تعرفي<br>
+        إنك حاجة غالية جدًا<br>
+        ومكانك محفوظ في قلبي
+    </p>
+    <button onclick="scrollToSection(4)">ابتسامة؟</button>
+</section>
+
+<section>
+    <div class="heart">❤️</div>
+    <p style="margin-top:20px">كفاية إنك دخلتي هنا</p>
+</section>
+
+<script>
+function scrollToSection(i) {
+    document.querySelectorAll("section")[i].scrollIntoView({
+        behavior: "smooth"
+    });
+}
+</script>
+
+</body>
+</html>
